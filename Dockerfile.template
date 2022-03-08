@@ -1,8 +1,9 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-node:14-3.15-20220212
 
-WORKDIR /variWriter
+WORKDIR /vari-writer
 
-COPY ./lib/ /variWriter/lib
+COPY . .
 
 RUN npm install
 
+CMD ["node", "start"]
