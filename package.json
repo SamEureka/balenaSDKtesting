@@ -1,0 +1,26 @@
+{
+  "name": "balenasdktesting",
+  "version": "1.0.0",
+  "description": "Using the SDK to write a fleet variable from a file.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamEureka/balenaSDKtesting.git"
+  },
+  "keywords": [
+    "balenaSDK"
+  ],
+  "author": "Sam Dennon",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SamEureka/balenaSDKtesting/issues"
+  },
+  "homepage": "https://github.com/SamEureka/balenaSDKtesting#readme",
+  "dependencies": {
+    "balena-sdk": "^16.16.0"
+  }
+}

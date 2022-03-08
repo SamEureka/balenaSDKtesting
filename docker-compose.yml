@@ -1,0 +1,17 @@
+version: '2.1'
+services:
+  variWriter:
+    build: .
+    privileged: true
+    environment:
+      - MY_VARIABLE=
+      - ANOTHER_VARIABLE=
+    restart: no
+    labels:
+      io.balena.features.balena-api: 1
+      io.balena.features.dbus: 1
+    volumes:
+      - balena:~/.balena
+    network_mode: host
+volumes:
+  balena:
